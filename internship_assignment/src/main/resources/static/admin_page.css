@@ -1,0 +1,40 @@
+html {
+  min-height: 100%;
+  display: grid;
+}
+
+body {
+  background-color: gray;
+  margin: auto;
+}
+
+
+input[type=text] {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  text-align: center;
+}

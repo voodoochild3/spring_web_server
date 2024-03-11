@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/admin_page.css}" rel="stylesheet" />
+</head>
+<body>
+    <form th:action="add" th:method="post" th:object="${HelloWorldMessage}">
+        <label for="language">Language:</label><br>
+        <input type="text" th:field="*{language}" id="language" name="language"><br>
+        <label for="message">Message:</label><br>
+        <input type="text" th:field="*{message}" id="message" name="message"><br><br>
+        <input type="submit" value="Add translation">
+    </form>
+    <div>
+        <p th:text="${notification}"></p><br>
+    </div>
+</body>
+</html>
+
